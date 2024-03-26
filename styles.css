@@ -1,0 +1,104 @@
+#video {
+    width: 50%;
+    max-width: 50%; 
+    height: fit-content; 
+    display: block; 
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+    background-image: url(./Assets/del-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  canvas {
+    position: absolute;
+  }
+
+  #captureButton {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: #007bff; 
+    color: #000000; 
+    border: none;
+    border-radius: 5px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: x-large;
+    cursor: pointer; 
+    margin-left: 1%;
+  }
+  
+  #captureButton:hover {
+    background-color: #ffb006; 
+}
+
+p {
+    font-size: 18px;
+    justify-content: flex-start;
+    margin-left: 3%;
+    font-size: x-large;
+    color: brown;
+    font-weight: bold;
+
+  }
+  
+  a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    letter-spacing: 4px;
+
+        
+}
+
+a:hover {
+    background-color: #03f40f;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f40f,
+                0 0 25px #03f40f,
+                0 0 50px #03f40f,
+                0 0 100px #03f40f;
+}
+
+a:span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    bottom: 2px;
+    left: -100px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03f40f);
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+  
